@@ -80,7 +80,7 @@ export default function Carrer2() {
   };
   let name = "";
   careers
-    .filter((id) => id.career_id === "2")
+    .filter((id) => id.career_id === "1")
     .map((career) => (name = career.career_name));
   const hstyle = {
     fontSize: "3em",

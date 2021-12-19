@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./Signup.css";
-
+import { Link } from "react-router-dom";
 import Header from "../Header";
 
 function Signup() {
@@ -71,9 +71,11 @@ function Signup() {
             <ul class="container">
               <li class="item center"></li>
               <li class="item">
-                <button type="submit" class="submit">
-                  가입하기
-                </button>
+                <Link to="/">
+                  <button type="submit" class="submit">
+                    가입하기
+                  </button>
+                </Link>
               </li>
               <li class="item"></li>
             </ul>

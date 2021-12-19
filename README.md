@@ -1,56 +1,19 @@
-# Video Background
-
-![gameplay](images/sample.gif)
+# NBTI(Newdeal Baka Type Indicator)
 
 ## What is it?
 
-This is a sample project intended to demonstrate how to 
-overlay a YouTube video as a background cover.
+고급웹프로그래밍 수업에서 배운 내용을 토대로 진행한 프로젝트.
 
 ## Why build it?
 
-Wanted to show that achieving this video effect isn't hard, and anyone can do it by following a simple example.
+MBTI테스트를 모티브로 컴퓨터공학과 학생들 혹은 비전공자더라도 개발자의 직군을 꿈꾸는 이들이
+막연히 하고싶은 일들이 있을텐데, 그 두루뭉실한 꿈에 자세한 정보와 상세한 방향성을 제공해주고자
+자신에게 어울리는 개발자 유형을 제시해주는 사이트를 만들어 봄.
 
 ## How does it work?
 
-The following CSS styles position the YouTube video frame as a background overlay.
+깃허브에서 메인화면을 꾸며줄 소스를 하나 클론해왔고, 프론트앤드 부분은 리액트를 통해 개발함.
+화면 구성의 경우 조금 미흡할 수 있으나 사용하기 편하게 상단에 메뉴바를 넣어두었고, 사용자가 보기에 전혀 불편함이 없도록 로딩시간을 단축시켰다.
+만들어 둔 API로 질문에 대한 정보와 답변으로 들어갈 각종 직군들에 대한 정보, 유용한 유튜브 영상들, 유익한 블로그 글의 주소를 받아와서 화면을 구성할 데이터들을 다뤘다.
 
-```css
-:root {
-    --video-width: 100vw;
-    --video-height: 100vh;
-}
-@media (min-aspect-ratio: 16/9) {
-    :root { --video-height: 56.25vw; }
-}
-@media (max-aspect-ratio: 16/9) {
-    :root { --video-width: 177.78vh; }
-}
-
-.video-background {
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-}
-
-.video-background iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: var(--video-width);
-    height: var(--video-height);
-    transform: translate(-50%, -50%);
-}
-```
-
-## How to get it?
-
-Clone and run it locally.
-
-```bash
-git clone https://github.com/reactgular/video-background
-cd video-background
-yarn install
-yarn start
-```
+-src파일 내에 각종 컴포넌트들이 들어있는데, pages에는 테스트를 다룰 버튼 컴포넌트와 메인페이지를 이룰 컴포넌트들, 질문컴포넌트들인 Question0~9까지 만들어 두었고, Careers파일내에는 결과창을 정리해서 띄워줄 Card.js파일과 결과를 띄우는 컴포넌트들을 Career0~13까지 만들어 두었다.

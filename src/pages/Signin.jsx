@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./Signin.css";
 import Header from "../Header";
-
+import { Link } from "react-router-dom";
 function Signin() {
   const Pstyle = {
     fontSize: "3em",
@@ -21,7 +21,9 @@ function Signin() {
         </div>
         <ul class="find_wrap">
           <li>
-            <button id="signup">회원가입</button>
+            <Link to="/Signup">
+              <button id="signup">회원가입</button>
+            </Link>
           </li>
           <li>
             <button id="forgot">아이디 찾기</button>
@@ -30,10 +32,9 @@ function Signin() {
             <button id="forgot">비밀번호 찾기</button>
           </li>
         </ul>
-
-        <button type="submit" href="/">
-          로그인
-        </button>
+        <Link to="/">
+          <button type="submit">로그인</button>
+        </Link>
       </form>
     </>
   );
