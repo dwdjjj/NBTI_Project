@@ -1,0 +1,80 @@
+/* body {
+  background: url(../images/bg-computer.jpg);
+} */
+.test-board {
+  background-color: rgba(177, 110, 110, 0.438);
+  background-size: cover;
+  opacity: 0.97;
+  overflow-y: auto;
+  text-align: center;
+  position: relative;
+}
+.test-board::before {
+  opacity: 0.5;
+  position: absolute;
+}
+#head {
+  font-size: 40pt;
+  font-weight: 700;
+  text-align: center;
+}
+.question-block-F,
+.question-block-T {
+  display: inline-block;
+  width: 770px;
+  height: auto;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0 1px 3px #111;
+  border-radius: 50px;
+}
+.question-block-F {
+  background-color: floralwhite;
+
+  align-items: center;
+  text-align: center;
+}
+.question-block-T {
+  background-color: rosybrown;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+span {
+  display: inline-block;
+  text-align: center;
+  font-size: 13pt;
+  color: darkgray;
+}
+div.res {
+  display: none;
+}
+p {
+  color: #666d71;
+  display: block;
+  font-size: 1.2em;
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+div.crr {
+  position: relative;
+  overflow-y: auto;
+}
+div.plus {
+  position: relative;
+
+  display: flex;
+}
+input {
+  height: 30px;
+  margin-left: 100px;
+}
+button {
+  margin-left: 20px;
+}

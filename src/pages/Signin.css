@@ -1,0 +1,107 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+form {
+  position: relative;
+  padding: 10px;
+}
+.loginForm {
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  padding: 30px, 20px;
+  background-color: #fff;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+p {
+  font-size: 30pt;
+  color: rgb(150, 144, 144);
+}
+.input-box {
+  position: relative;
+  margin: 10px 0;
+}
+.input-box > input {
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px #ccc;
+  padding: 20px 0px 5px 0px;
+  font-size: 14pt;
+  width: 100%;
+}
+input::placeholder {
+  color: transparent;
+}
+input:placeholder-shown + label {
+  color: #aaa;
+  font-size: 14pt;
+  top: 15px;
+}
+input:focus + label,
+label {
+  color: #8aa1a1;
+  font-size: 10pt;
+  pointer-events: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+  border-bottom: solid 1px #8aa1a1;
+  outline: none;
+}
+.find_wrap li {
+  position: relative;
+  padding: 24px 0 20px;
+}
+/* li {
+  text-align: -webkit-match-parent;
+} */
+ul {
+  display: block;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding-inline-start: 30px;
+}
+button[type="submit"] {
+  background-color: #8aa1a1;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  font-size: 14pt;
+  margin-top: 100px;
+}
+#forgot {
+  position: relative;
+  align-items: right;
+  float: right;
+  font-size: 12pt;
+  color: rgb(164, 164, 164);
+  margin: 10px 0px;
+  margin-left: 10px;
+}
+#signup {
+  position: relative;
+  float: right;
+  text-align: right;
+  font-size: 12pt;
+  color: rgb(164, 164, 164);
+  margin: 10px 0px;
+  margin-left: 10px;
+}
