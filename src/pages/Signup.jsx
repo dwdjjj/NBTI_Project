@@ -60,19 +60,7 @@ function Signup() {
               </li>
               <li class="item"></li>
             </ul>
-            <ul class="container">
-              <li class="item center">성별</li>
-              <li class="item">
-                <select name="gender" id="">
-                  <option value="선택" selected>
-                    선택
-                  </option>
-                  <option value="남성">남성</option>
-                  <option value="여성">여성</option>
-                </select>
-              </li>
-              <li class="item"></li>
-            </ul>
+
             <ul class="container">
               <li class="item center">전화번호</li>
               <li class="item">
@@ -83,7 +71,9 @@ function Signup() {
             <ul class="container">
               <li class="item center"></li>
               <li class="item">
-                <button class="submit">가입하기</button>
+                <button type="submit" class="submit">
+                  가입하기
+                </button>
               </li>
               <li class="item"></li>
             </ul>

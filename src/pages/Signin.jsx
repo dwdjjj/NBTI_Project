@@ -1,13 +1,17 @@
 import * as React from "react";
 import "./Signin.css";
 import Header from "../Header";
+
 function Signin() {
+  const Pstyle = {
+    fontSize: "3em",
+  };
   return (
     <>
       <Header />
       <form action="" class="loginForm">
-        <a href="https://app.swaggerhub.com/apis/newdeal123/NBTI/1.0.3">
-          <p>NBTI</p>
+        <a href="/">
+          <p style={Pstyle}>NBTI</p>
         </a>
         <div class="input-box">
           <input id="username" type="text" placeholder="아이디" />
@@ -17,9 +21,7 @@ function Signin() {
         </div>
         <ul class="find_wrap">
           <li>
-            <button id="signup" onclick="location.href='Signup'">
-              회원가입
-            </button>
+            <button id="signup">회원가입</button>
           </li>
           <li>
             <button id="forgot">아이디 찾기</button>
